@@ -18,7 +18,10 @@ Crée les seeder :
 Crée les les controllers, les models, les migrations, les factorys :
 `php artisan make:model 'nom du model' -a`  
 
-Apres avoir modifié la migration de chaque table on actualise pour que les champs apparaissent sur phpMyAdmin grace a la commande `php artisan migrate`.
+Apres avoir modifié la migration de chaque table on actualise pour que les champs apparaissent sur phpMyAdmin grace a la commande `php artisan migrate` mais seulement celles qu'on a pas encore fait.
+`php artisan migrate:refresh` supprime les tables et le remigre.
+`php artisan migrate:reset` supprimes toutes les données.
+Pour voir toutes les commandes on fait `php artisan list`.
 
 Pour lancer un projet laravel il faut faire `php artisan serve`
 
@@ -33,8 +36,8 @@ Pour lancer un projet laravel il faut faire `php artisan serve`
 
 Pour le css et le js il faut faire la commande `npm install` et pour le lancer il faut faire `npm run watch`.
 
-Le dossier public est le point d'entrée de notre application, c'est lui qui s'occupe de redirigé les URLS
+Le dossier public est le point d'entrée de notre application, c'est lui qui s'occupe de redirigé les URLS.
 
 Dans le dossier storage il y a les log de notre appli et les fichier sont stocker dans les storage comme les images...   
 
-
+Pour faire l'equivalent d'un vardump() en php il faut faire en laravel `dd()`.
