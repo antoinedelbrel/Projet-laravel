@@ -1,6 +1,6 @@
 # Creation d'un projet laravel
 
-Crée le projet laravel : `laravel new 'nom du projet`.
+Créer le projet laravel : `laravel new 'nom du projet`.
 
 Dans le .env il faut faire :   
 `DB_CONNECTION=mysql `   
@@ -12,10 +12,10 @@ Dans le .env il faut faire :
 
 Configurer le web.php dans le dossier routes/, c'est dans ce fichier que l'on retourne des views.
 
-Crée les seeder : 
+Créer les seeder : 
 `php artisan make:seeder 'nom du seeder'`
 
-Crée les les controllers, les models, les migrations, les factorys :
+Créer les les controllers, les models, les migrations, les factorys :
 `php artisan make:model 'nom du model' -a`  
 
 Apres avoir modifié la migration de chaque table on actualise pour que les champs apparaissent sur phpMyAdmin grace a la commande `php artisan migrate` mais seulement celles qu'on a pas encore fait.
